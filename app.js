@@ -1,8 +1,10 @@
 // Constructor function - start
 function Gallery(element) {
 
-    // Getting the NodeList of all '.img' for that element
-    this.list = element.querySelectorAll('.img');
+    // 1. Getting the NodeList of all '.img' for that element
+    // 2. Using Spread Operator to convert NodeList into an Array
+    this.list = [...element.querySelectorAll('.img')];
+    console.log(this.list);
 
 
 }
