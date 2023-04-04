@@ -1,3 +1,9 @@
+// Constructor function - start
+function Gallery(element) {
+
+}
+// Constructor function - end
+
 // getElement - start
 function getElement(selection) {
 
