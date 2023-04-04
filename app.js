@@ -8,6 +8,9 @@ function Gallery(element) {
 // Nature Gallery:
 const natureGallery = new Gallery(getElement('.nature'));
 
+// City Gallery:
+const cityGallery = new Gallery(getElement('.city'));
+
 // Gallery Instances - end
 
 // getElement - start
