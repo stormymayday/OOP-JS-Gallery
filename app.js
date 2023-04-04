@@ -5,12 +5,15 @@ function Gallery(element) {
     // 2. Using Spread Operator to convert NodeList into an Array
     this.list = [...element.querySelectorAll('.img')];
 
-    // Targetting the Modal
+    // Selecting the Modal
     this.modal = getElement('.modal');
 
-    // Targetting the '.main-img' inside the Modal
+    // Selecting the Main Image inside the Modal
     this.mainImg = getElement('.main-img');
-    console.log(this.mainImg);
+
+    // Selecting the Modal Images
+    this.modalImages = getElement('.modal-images');
+    console.log(this.modalImages);
 
 }
 // Constructor function - end
