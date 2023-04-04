@@ -1,6 +1,10 @@
 // Constructor function - start
 function Gallery(element) {
 
+    // Getting the NodeList of all '.img' for that element
+    this.list = element.querySelectorAll('.img');
+
+
 }
 // Constructor function - end
 
@@ -10,7 +14,6 @@ const natureGallery = new Gallery(getElement('.nature'));
 
 // City Gallery:
 const cityGallery = new Gallery(getElement('.city'));
-
 // Gallery Instances - end
 
 // getElement - start
