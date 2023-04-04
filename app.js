@@ -13,7 +13,10 @@ function Gallery(element) {
 
     // Selecting the Modal Images
     this.modalImages = getElement('.modal-images');
-    console.log(this.modalImages);
+
+    // Selecting the Close Modal Button
+    this.closeModalBtn = getElement('.close-btn');
+    console.log(this.closeModalBtn);
 
 }
 // Constructor function - end
