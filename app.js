@@ -4,6 +4,12 @@ function Gallery(element) {
 }
 // Constructor function - end
 
+// Gallery Instances - start
+// Nature:
+const nature = new Gallery(getElement('.nature'));
+
+// Gallery Instances - end
+
 // getElement - start
 function getElement(selection) {
 
