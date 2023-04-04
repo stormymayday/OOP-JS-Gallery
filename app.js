@@ -16,7 +16,10 @@ function Gallery(element) {
 
     // Selecting the Close Modal Button
     this.closeModalBtn = getElement('.close-btn');
-    console.log(this.closeModalBtn);
+
+    // Selecting the Next Button inside the Modal
+    this.nextBtn = getElement('.next-btn');
+    console.log(this.nextBtn);
 
 }
 // Constructor function - end
