@@ -19,7 +19,6 @@ function Gallery(element) {
 
     // Selecting the Previous Button inside the Modal
     this.prevBtn = getElement('.prev-btn');
-    console.log(this.prevBtn);
 
     // Selecting the Next Button inside the Modal
     this.nextBtn = getElement('.next-btn');
