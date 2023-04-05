@@ -29,8 +29,11 @@ function Gallery(element) {
     // Binding openModal to the Gallery (instead of the container)
     this.openModal = this.openModal.bind(this);
 
-    // Adding 'click' event listener to the container that calls openModal method
-    this.container.addEventListener('click', this.openModal);
+    // Adding 'click' event listener to the container
+    this.container.addEventListener('click', function (event) {
+        console.log(this);
+        this.openModal();
+    }.bind(this));
 
 }
 // Constructor function - end
