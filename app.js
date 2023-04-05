@@ -26,9 +26,6 @@ function Gallery(element) {
     // Selecting the Next Button inside the Modal
     this.nextBtn = getElement('.next-btn');
 
-    // Binding openModal to the Gallery (instead of the container)
-    this.openModal = this.openModal.bind(this);
-
     // Adding 'click' event listener to the container
     this.container.addEventListener('click', function (event) {
         console.log(this);
