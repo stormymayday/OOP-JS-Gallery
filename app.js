@@ -26,6 +26,9 @@ function Gallery(element) {
     // Selecting the Next Button inside the Modal
     this.nextBtn = getElement('.next-btn');
 
+    // Adding 'click' event listener to the container that calls openModal method
+    this.container.addEventListener('click', this.openModal);
+
 }
 // Constructor function - end
 
