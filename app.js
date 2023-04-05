@@ -1,6 +1,9 @@
 // Constructor function - start
 function Gallery(element) {
 
+    // Selecting the container (section with class '.nature' or '.city')
+    this.container = element;
+
     // 1. Getting the NodeList of all '.img' for that element
     // 2. Using Spread Operator to convert NodeList into an Array
     this.list = [...element.querySelectorAll('.img')];
