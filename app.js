@@ -39,8 +39,9 @@ function Gallery(element) {
 // openModal - start
 Gallery.prototype.openModal = function () {
 
-    console.log(this);
-    console.log(`open modal`);
+    // Adding '.open' class to the modal
+    // Note: openModal must be bound to the Gallery first because modal is on the Gallery
+    this.modal.classList.add('open');
 
 }
 // openModal - end
