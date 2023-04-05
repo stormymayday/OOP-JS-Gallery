@@ -29,6 +29,17 @@ function Gallery(element) {
 }
 // Constructor function - end
 
+// Gallery Methods - start
+// openModal - start
+Gallery.prototype.openModal = function () {
+
+    console.log(this);
+    console.log(`open modal`);
+
+}
+// openModal - end
+// Gallery Methods - end
+
 // Gallery Instances - start
 // Nature Gallery:
 const natureGallery = new Gallery(getElement('.nature'));
