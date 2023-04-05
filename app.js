@@ -27,12 +27,12 @@ function Gallery(element) {
     this.nextBtn = getElement('.next-btn');
 
     // Adding 'click' event listener to the container
-    // Note: Callback is bound to the Gallery (instead of the container)
     this.container.addEventListener('click', function (event) {
 
         // Calling openModal method (that is on the prototype):
         this.openModal();
 
+        // Note: Callback is bound to the Gallery (instead of the container)
     }.bind(this));
 
 }
