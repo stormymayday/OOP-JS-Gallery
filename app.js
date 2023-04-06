@@ -33,7 +33,8 @@ function Gallery(element) {
         if (event.target.classList.contains('img')) {
 
             // Calling openModal method (that is on the prototype)
-            // this.list argument contains all the images ('img')
+            // event.target argument is the image that was clicked
+            // this.list argument is the array that contains all the images ('img')
             this.openModal(event.target, this.list);
 
         }
@@ -47,6 +48,8 @@ function Gallery(element) {
 // Gallery Methods - start
 // openModal - start
 Gallery.prototype.openModal = function (selectedImage, list) {
+
+    console.log(selectedImage, list);
 
     // Adding '.open' class to the modal
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
