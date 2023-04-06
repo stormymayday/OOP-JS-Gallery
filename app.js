@@ -55,6 +55,11 @@ Gallery.prototype.openModal = function (selectedImage, list) {
     // Calling the setMainImage method and passing selectedImage
     this.setMainImage(selectedImage);
 
+    // Setting the Modal Images
+    this.modalImages.innerHTML = list.map(function (image) {
+        return `<img src="${image.src}" title="${image.title}" data-id="${image.dataset.id}" class="${selectedImage.dataset.id === image.dataset.id ? "modal-img selected" : "modal-img"}" alt="${image.alt}" />`;
+    }).join('');
+
     // Adding '.open' class to the modal
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
     this.modal.classList.add('open');
