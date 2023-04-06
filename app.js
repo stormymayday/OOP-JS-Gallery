@@ -12,7 +12,7 @@ function Gallery(element) {
     this.modal = getElement('.modal');
 
     // Selecting the Main Image inside the Modal
-    this.mainImg = getElement('.main-img');
+    this.mainModalImg = getElement('.main-img');
 
     // Selecting the Image Name
     this.imageName = getElement('.image-name');
