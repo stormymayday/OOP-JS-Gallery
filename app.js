@@ -14,6 +14,9 @@ function Gallery(element) {
     // Selecting the Main Image inside the Modal
     this.mainImg = getElement('.main-img');
 
+    // Selecting the Image Name
+    this.imageName = getElement('.image-name');
+
     // Selecting the Modal Images
     this.modalImages = getElement('.modal-images');
 
