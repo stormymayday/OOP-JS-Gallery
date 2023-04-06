@@ -64,6 +64,9 @@ Gallery.prototype.openModal = function (selectedImage, list) {
 // setMainImage - start
 Gallery.prototype.setMainImage = function (selectedImage) {
 
+    // Setting Main Modal Image src attribute
+    this.mainModalImg.src = selectedImage.src;
+
 };
 // setMainImage - end
 // Gallery Methods - end
