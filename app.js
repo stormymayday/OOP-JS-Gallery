@@ -29,6 +29,11 @@ function Gallery(element) {
     // Adding 'click' event listener to the container
     this.container.addEventListener('click', function (event) {
 
+        // Checking if an image was clicked
+        if (event.target.classList.contains('img')) {
+
+        }
+
         // Calling openModal method (that is on the prototype):
         this.openModal();
 
