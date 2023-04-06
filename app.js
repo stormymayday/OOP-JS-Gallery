@@ -33,7 +33,7 @@ function Gallery(element) {
         if (event.target.classList.contains('img')) {
 
             // Calling openModal method (that is on the prototype):
-            this.openModal();
+            this.openModal(event.target, this.list);
 
         }
 
