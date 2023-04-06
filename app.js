@@ -67,6 +67,9 @@ Gallery.prototype.setMainImage = function (selectedImage) {
     // Setting Main Modal Image src attribute
     this.mainModalImg.src = selectedImage.src;
 
+    // Setting the Image Name text content
+    this.imageName.textContent = selectedImage.title;
+
 };
 // setMainImage - end
 // Gallery Methods - end
