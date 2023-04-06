@@ -69,7 +69,7 @@ Gallery.prototype.setMainImage = function (selectedImage) {
     this.mainModalImg.src = selectedImage.src;
 
     // Setting the Image Name text content
-    this.imageName.textContent = selectedImage.title;
+    this.imageName.textContent = selectedImage.alt;
 
 };
 // setMainImage - end
