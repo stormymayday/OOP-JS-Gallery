@@ -55,8 +55,14 @@ Gallery.prototype.openModal = function (selectedImage, list) {
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
     this.modal.classList.add('open');
 
-}
+};
 // openModal - end
+
+// setMainImage - start
+Gallery.prototype.setMainImage = function (selectedImage) {
+
+};
+// setMainImage - end
 // Gallery Methods - end
 
 // Gallery Instances - start
