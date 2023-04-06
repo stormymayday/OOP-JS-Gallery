@@ -32,7 +32,8 @@ function Gallery(element) {
         // Checking if an image was clicked
         if (event.target.classList.contains('img')) {
 
-            // Calling openModal method (that is on the prototype):
+            // Calling openModal method (that is on the prototype)
+            // this.list argument contains all the images ('img')
             this.openModal(event.target, this.list);
 
         }
