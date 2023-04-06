@@ -52,7 +52,8 @@ function Gallery(element) {
 // openModal - start
 Gallery.prototype.openModal = function (selectedImage, list) {
 
-    console.log(selectedImage, list);
+    // Calling the setMainImage method and passing selectedImage
+    this.setMainImage(selectedImage);
 
     // Adding '.open' class to the modal
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
