@@ -32,10 +32,10 @@ function Gallery(element) {
         // Checking if an image was clicked
         if (event.target.classList.contains('img')) {
 
-        }
+            // Calling openModal method (that is on the prototype):
+            this.openModal();
 
-        // Calling openModal method (that is on the prototype):
-        this.openModal();
+        }
 
         // Note: Callback is bound to the Gallery (instead of the container)
     }.bind(this));
