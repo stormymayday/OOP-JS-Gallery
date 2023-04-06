@@ -40,7 +40,7 @@ function Gallery(element) {
 
 // Gallery Methods - start
 // openModal - start
-Gallery.prototype.openModal = function () {
+Gallery.prototype.openModal = function (selectedImage, list) {
 
     // Adding '.open' class to the modal
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
