@@ -82,6 +82,12 @@ Gallery.prototype.nextImage = function () {
 };
 // nextImage - end
 
+// prevImage - start
+Gallery.prototype.prevImage = function () {
+
+};
+// prevImage - end
+
 // setMainImage - start
 Gallery.prototype.setMainImage = function (selectedImage) {
 
