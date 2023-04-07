@@ -90,6 +90,10 @@ Gallery.prototype.closeModal = function () {
     // Removing '.open' class
     this.modal.classList.remmove('open');
 
+    // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed
+    this.closeBtn.removeEventListener('click', this.closeModal);
+
+
 };
 // closeModal - end
 
