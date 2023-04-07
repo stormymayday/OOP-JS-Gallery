@@ -70,6 +70,9 @@ Gallery.prototype.openModal = function (selectedImage, list) {
 // closeModal - start
 Gallery.prototype.closeModal = fumction() {
 
+    // Removing '.open' class
+    this.modal.classList.remmove('open');
+
 };
 // closeModal - end
 
