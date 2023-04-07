@@ -64,17 +64,19 @@ Gallery.prototype.openModal = function (selectedImage, list) {
     // Note: openModal must be bound to the Gallery first because modal is on the Gallery
     this.modal.classList.add('open');
 
-    // Event Listeners - start
+    // Modal buttons (close, prev, next) Event Listeners - start
     this.closeBtn.addEventListener('click', this.closeModal);
 
     this.prevBtn.addEventListener('click', this.prevImage);
-    // Event Listeners - end
+
+    this.nextBtn.addEventListener('click', this.nextImage);
+    // Modal buttons (close, prev, next) Event Listeners - end
 
 };
 // openModal - end
 
 // closeModal - start
-Gallery.prototype.closeModal = fumction() {
+Gallery.prototype.closeModal = function () {
 
     // Removing '.open' class
     this.modal.classList.remmove('open');
