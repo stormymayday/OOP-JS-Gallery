@@ -88,7 +88,7 @@ Gallery.prototype.openModal = function (selectedImage, list) {
 Gallery.prototype.closeModal = function () {
 
     // Removing '.open' class
-    this.modal.classList.remmove('open');
+    this.modal.classList.remove('open');
 
     // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed
     this.closeModalBtn.removeEventListener('click', this.closeModal);
