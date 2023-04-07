@@ -35,6 +35,9 @@ function Gallery(element) {
     // Binding prevImage method to the Gallery
     this.prevImage = this.prevImage.bind(this);
 
+    // Binding nextImage method to the Gallery
+    this.nextImage = this.nextImage.bind(this);
+
     // Adding 'click' event listener to the container
     this.container.addEventListener('click', function (event) {
 
