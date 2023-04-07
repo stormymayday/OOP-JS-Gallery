@@ -92,6 +92,7 @@ Gallery.prototype.closeModal = function () {
 
     // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed
     this.closeModalBtn.removeEventListener('click', this.closeModal);
+    this.prevBtn.removeEventListener('click', this.prevImage);
 
 
 };
