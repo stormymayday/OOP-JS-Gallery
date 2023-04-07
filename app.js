@@ -66,6 +66,8 @@ Gallery.prototype.openModal = function (selectedImage, list) {
 
     // Event Listeners - start
     this.closeBtn.addEventListener('click', this.closeModal);
+
+    this.prevBtn.addEventListener('click', this.prevImage);
     // Event Listeners - end
 
 };
