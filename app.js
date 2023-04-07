@@ -76,6 +76,12 @@ Gallery.prototype.closeModal = fumction() {
 };
 // closeModal - end
 
+// nextImage - start
+Gallery.prototype.nextImage = function () {
+
+};
+// nextImage - end
+
 // setMainImage - start
 Gallery.prototype.setMainImage = function (selectedImage) {
 
