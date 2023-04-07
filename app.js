@@ -67,6 +67,12 @@ Gallery.prototype.openModal = function (selectedImage, list) {
 };
 // openModal - end
 
+// closeModal - start
+Gallery.prototype.closeModal = fumction() {
+
+};
+// closeModal - end
+
 // setMainImage - start
 Gallery.prototype.setMainImage = function (selectedImage) {
 
