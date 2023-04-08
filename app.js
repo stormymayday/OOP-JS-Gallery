@@ -114,6 +114,9 @@ Gallery.prototype.nextImage = function () {
     // Getting the selected image
     const selected = this.modalImages.querySelector('.selected');
 
+    // Getting the next OR (if it is the end of the array and nextElementSibling is undefined) the first image
+    const next = selected.nextElementSibling || this.modalImages.firstElementChild;
+
 };
 // nextImage - end
 
