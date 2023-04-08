@@ -102,17 +102,20 @@ Gallery.prototype.closeModal = function () {
 };
 // closeModal - end
 
-// nextImage - start
-Gallery.prototype.nextImage = function () {
-
-};
-// nextImage - end
-
 // prevImage - start
 Gallery.prototype.prevImage = function () {
 
 };
 // prevImage - end
+
+// nextImage - start
+Gallery.prototype.nextImage = function () {
+
+    // Getting the selected image
+    const selected = this.modalImages.querySelector('.selected');
+
+};
+// nextImage - end
 
 // setMainImage - start
 Gallery.prototype.setMainImage = function (selectedImage) {
