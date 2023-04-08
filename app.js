@@ -115,6 +115,9 @@ Gallery.prototype.prevImage = function () {
     // Removing the class '.selected' from the selected image
     selectedImage.classList.remove('selected');
 
+    // Adding the class '.selected' to the previous image
+    prevImage.classList.add('selected');
+
 };
 // prevImage - end
 
