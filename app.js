@@ -124,6 +124,9 @@ Gallery.prototype.nextImage = function () {
     // Adding the class '.selected' to the next image
     nextImage.classList.add('.selected');
 
+    // Setting the next image as the main image
+    this.setMainImage(nextImage);
+
 };
 // nextImage - end
 
