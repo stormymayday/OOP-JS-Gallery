@@ -119,10 +119,10 @@ Gallery.prototype.nextImage = function () {
     const nextImage = selectedImage.nextElementSibling || this.modalImages.firstElementChild;
 
     // Removing the class '.selected' from the selected image
-    selectedImage.classList.remove('.selected');
+    selectedImage.classList.remove('selected');
 
     // Adding the class '.selected' to the next image
-    nextImage.classList.add('.selected');
+    nextImage.classList.add('selected');
 
     // Setting the next image as the main image
     this.setMainImage(nextImage);
