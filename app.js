@@ -116,13 +116,13 @@ Gallery.prototype.nextImage = function () {
 
     // Getting the next image
     // OR the first image (if it is the end of the array and nextElementSibling is undefined)
-    const next = selectedImage.nextElementSibling || this.modalImages.firstElementChild;
+    const nextImage = selectedImage.nextElementSibling || this.modalImages.firstElementChild;
 
     // Removing the class '.selected' from the selected image
     selectedImage.classList.remove('.selected');
 
     // Adding the class '.selected' to the next image
-    next.classList.add('.selected');
+    nextImage.classList.add('.selected');
 
 };
 // nextImage - end
