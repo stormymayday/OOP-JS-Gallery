@@ -105,6 +105,9 @@ Gallery.prototype.closeModal = function () {
 // prevImage - start
 Gallery.prototype.prevImage = function () {
 
+    // Getting the selected image
+    const selectedImage = this.modalImages.querySelector('.selected');
+
 };
 // prevImage - end
 
