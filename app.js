@@ -118,6 +118,9 @@ Gallery.prototype.prevImage = function () {
     // Adding the class '.selected' to the previous image
     prevImage.classList.add('selected');
 
+    // Setting the previous image as the main image
+    this.setMainImage(prevImage);
+
 };
 // prevImage - end
 
