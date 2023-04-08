@@ -112,6 +112,9 @@ Gallery.prototype.prevImage = function () {
     // OR the last image (if it is the start of the array and previousElementSibling is undefined)
     const prevImage = selectedImage.previousElementSibling || this.modalImages.lastElementChild;
 
+    // Removing the class '.selected' from the selected image
+    selectedImage.classList.remove('selected');
+
 };
 // prevImage - end
 
