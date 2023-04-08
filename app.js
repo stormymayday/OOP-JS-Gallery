@@ -108,6 +108,10 @@ Gallery.prototype.prevImage = function () {
     // Getting the selected image
     const selectedImage = this.modalImages.querySelector('.selected');
 
+    // Getting the previous image
+    // OR the last image (if it is the start of the array and previousElementSibling is undefined)
+    const prevImage = selectedImage.previousElementSibling || this.modalImages.lastElementChild;
+
 };
 // prevImage - end
 
