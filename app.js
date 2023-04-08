@@ -112,14 +112,14 @@ Gallery.prototype.prevImage = function () {
 Gallery.prototype.nextImage = function () {
 
     // Getting the selected image
-    const selected = this.modalImages.querySelector('.selected');
+    const selectedImage = this.modalImages.querySelector('.selected');
 
     // Getting the next image
     // OR the first image (if it is the end of the array and nextElementSibling is undefined)
-    const next = selected.nextElementSibling || this.modalImages.firstElementChild;
+    const next = selectedImage.nextElementSibling || this.modalImages.firstElementChild;
 
     // Removing the class '.selected' from the selected image
-    selected.classList.remove('.selected');
+    selectedImage.classList.remove('.selected');
 
     // Adding the class '.selected' to the next image
     next.classList.add('.selected');
