@@ -120,6 +120,9 @@ Gallery.prototype.nextImage = function () {
     // Removing the class '.selected' from the selected image
     selected.classList.remove('.selected');
 
+    // Adding the class '.selected' to the next image
+    next.classList.add('.selected');
+
 };
 // nextImage - end
 
