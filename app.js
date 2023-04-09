@@ -182,6 +182,9 @@ Gallery.prototype.selectModalImage = function (event) {
         // Invoking setMainImage method and passing 'clicked' image as an argument
         this.setMainImage(event.target);
 
+        // Adding the '.selected' class to the clicked on image
+        event.target.classList.add('selected');
+
     }
 
 };
