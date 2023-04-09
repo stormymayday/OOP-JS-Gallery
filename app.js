@@ -157,6 +157,12 @@ Gallery.prototype.setMainImage = function (selectedImage) {
 
 };
 // setMainImage - end
+
+// selectModalImage - start
+Gallery.prototype.selectModalImage = function () {
+
+};
+// selectModalImage - end
 // Gallery Methods - end
 
 // Gallery Instances - start
