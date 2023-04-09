@@ -176,6 +176,9 @@ Gallery.prototype.selectModalImage = function (event) {
         // Targetting currently '.selected' image
         const selectedImage = this.modalImages.querySelector('.selected');
 
+        // Removing the '.selected' class from currently '.selected' image
+        selectedImage.classList.remove('selected');
+
         // Invoking setMainImage method and passing 'clicked' image as an argument
         this.setMainImage(event.target);
 
