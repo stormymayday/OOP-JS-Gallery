@@ -173,6 +173,9 @@ Gallery.prototype.selectModalImage = function (event) {
     // Checking if '.modal-img' was clicked on
     if (event.target.classList.contains('modal-img')) {
 
+        // Targetting currently '.selected' image
+        const selectedImage = this.modalImages.querySelector('.selected');
+
         // Invoking setMainImage method and passing 'clicked' image as an argument
         this.setMainImage(event.target);
 
