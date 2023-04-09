@@ -81,6 +81,10 @@ Gallery.prototype.openModal = function (selectedImage, list) {
     this.nextBtn.addEventListener('click', this.nextImage);
     // Modal buttons (close, prev, next) Event Listeners - end
 
+    // Event listener for clicking the modalImages
+    // Callbacks the selecModalImage method
+    this.modalImages.addEventListener('click', this.selectModalImage);
+
 };
 // openModal - end
 
@@ -97,7 +101,6 @@ Gallery.prototype.closeModal = function () {
 
     this.nextBtn.removeEventListener('click', this.nextImage);
     // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed - end
-
 
 };
 // closeModal - end
