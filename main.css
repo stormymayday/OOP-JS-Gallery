@@ -147,9 +147,29 @@ p {
 
 /*  global classes */
 
+/* title start */
+.title {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.title:first-of-type {
+    margin-top: 7rem;
+}
+
+.title-underline {
+    background-color: var(--clr-primary-5);
+    width: 7rem;
+    height: 0.25rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+/* title end */
+
 /* section */
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
