@@ -159,7 +159,10 @@ Gallery.prototype.setMainImage = function (selectedImage) {
 // setMainImage - end
 
 // selectModalImage - start
+// This method sets allows to set a new Main Image by clicking on Modal Image
 Gallery.prototype.selectModalImage = function () {
+
+
 
 };
 // selectModalImage - end
