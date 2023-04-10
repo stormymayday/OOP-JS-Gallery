@@ -4,6 +4,8 @@ class Gallery {
     // constructor - start
     constructor(element) {
 
+        // Properties - start
+
         // Selecting the container (section with class '.nature' or '.city')
         this.container = element;
 
@@ -31,6 +33,12 @@ class Gallery {
 
         // Selecting the Next Button inside the Modal
         this.nextBtn = getElement('.next-btn');
+
+        // Properties - end
+
+        // Bidnings - start
+
+        // Bidnings - end
 
         // Adding 'click' event listener to the container
         this.container.addEventListener('click', function (event) {
@@ -82,6 +90,25 @@ class Gallery {
 
     };
     // openModal - end
+
+    // closeModal - start
+    closeModal() {
+
+        // Removing '.open' class
+        this.modal.classList.remove('open');
+
+        // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed - start
+        this.closeModalBtn.removeEventListener('click', this.closeModal);
+
+        this.prevBtn.removeEventListener('click', this.prevImage);
+
+        this.nextBtn.removeEventListener('click', this.nextImage);
+        // Removing Event Listeners from Modal buttons (close, prev, next) when Modal is closed - end
+
+        // Removing 'click' Event listener from the modalImages
+        this.modalImages.removeEventListener('click', this.selectModalImage);
+    };
+    // closeModal - end
     // Methods - end
 
 }
