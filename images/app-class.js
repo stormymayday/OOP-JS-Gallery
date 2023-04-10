@@ -38,6 +38,9 @@ class Gallery {
 
         // Bidnings - start
 
+        // Binding closeModal method to the Gallery
+        this.closeModal = this.closeModal.bind(this);
+
         // Bidnings - end
 
         // Adding 'click' event listener to the container
