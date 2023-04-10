@@ -20,6 +20,9 @@ class Gallery {
         // Selecting the Image Name
         this.imageName = getElement('.image-name');
 
+        // Selecting the Modal Images
+        this.modalImages = getElement('.modal-images');
+
     }
     // constructor - end
 
