@@ -174,6 +174,30 @@ class Gallery {
 
     };
     // setMainImage - end
+
+    // selectModalImage - start
+    // This method sets allows to set a new Main Image by clicking on Modal Image
+    selectModalImage(event) {
+
+        // Checking if '.modal-img' was clicked on
+        if (event.target.classList.contains('modal-img')) {
+
+            // Targetting currently '.selected' image
+            const selectedImage = this.modalImages.querySelector('.selected');
+
+            // Removing the '.selected' class from currently '.selected' image
+            selectedImage.classList.remove('selected');
+
+            // Invoking setMainImage method and passing 'clicked' image as an argument
+            this.setMainImage(event.target);
+
+            // Adding the '.selected' class to the clicked on image
+            event.target.classList.add('selected');
+
+        }
+
+    };
+    // selectModalImage - end
     // Methods - end
 
 }
