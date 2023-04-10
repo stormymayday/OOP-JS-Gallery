@@ -162,6 +162,18 @@ class Gallery {
 
     };
     // nextImage - end
+
+    // setMainImage - start
+    setMainImage(selectedImage) {
+
+        // Setting Main Modal Image src attribute
+        this.mainModalImg.src = selectedImage.src;
+
+        // Setting the Image Name text content
+        this.imageName.textContent = selectedImage.alt;
+
+    };
+    // setMainImage - end
     // Methods - end
 
 }
