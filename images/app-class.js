@@ -137,6 +137,28 @@ class Gallery {
 
     };
     // prevImage - end
+
+    // nextImage - start
+    nextImage() {
+
+        // Getting the selected image
+        const selectedImage = this.modalImages.querySelector('.selected');
+
+        // Getting the next image
+        // OR the first image (if it is the end of the array and nextElementSibling is undefined)
+        const nextImage = selectedImage.nextElementSibling || this.modalImages.firstElementChild;
+
+        // Removing the class '.selected' from the selected image
+        selectedImage.classList.remove('selected');
+
+        // Adding the class '.selected' to the next image
+        nextImage.classList.add('selected');
+
+        // Setting the next image as the main image
+        this.setMainImage(nextImage);
+
+    };
+    // nextImage - end
     // Methods - end
 
 }
