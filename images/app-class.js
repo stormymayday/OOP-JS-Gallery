@@ -4,6 +4,9 @@ class Gallery {
     // constructor - start
     constructor(element) {
 
+        // Selecting the container (section with class '.nature' or '.city')
+        this.container = element;
+
     }
     // constructor - end
 
