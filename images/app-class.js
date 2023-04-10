@@ -2,7 +2,7 @@
 class Gallery {
 
     // constructor - start
-    constructor() {
+    constructor(element) {
 
     }
     // constructor - end
