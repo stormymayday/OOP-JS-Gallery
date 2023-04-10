@@ -44,6 +44,9 @@ class Gallery {
         // Binding prevImage method to the Gallery
         this.prevImage = this.prevImage.bind(this);
 
+        // Binding nextImage method to the Gallery
+        this.nextImage = this.nextImage.bind(this);
+
         // Bidnings - end
 
         // Adding 'click' event listener to the container
