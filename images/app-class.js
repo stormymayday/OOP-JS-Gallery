@@ -32,6 +32,23 @@ class Gallery {
         // Selecting the Next Button inside the Modal
         this.nextBtn = getElement('.next-btn');
 
+        // Adding 'click' event listener to the container
+        this.container.addEventListener('click', function (event) {
+
+            // Checking if an image was clicked
+            if (event.target.classList.contains('img')) {
+
+                // Calling openModal method
+                // event.target argument is the image that was clicked
+                // this.list argument is the array that contains all the images ('img')
+                this.openModal(event.target, this.list);
+
+            }
+
+            // Note: Callback is bound to the Gallery (instead of the container)
+        }.bind(this));
+        // Container 'click' Event Listener - end
+
     }
     // constructor - end
 
