@@ -218,3 +218,9 @@ function getElement(selection) {
     throw new Error(`Please check "${selection}" selector, no such element exists`);
 }
 // getElement - end
+
+// Gallery Instances - start
+// Nature Gallery:
+const natureGallery = new Gallery(getElement('.nature'));
+
+// Gallery Instances - end
