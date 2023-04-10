@@ -47,6 +47,9 @@ class Gallery {
         // Binding nextImage method to the Gallery
         this.nextImage = this.nextImage.bind(this);
 
+        // Binding selectModalImage method to the Gallery
+        this.selectModalImage = this.selectModalImage.bind(this);
+
         // Bidnings - end
 
         // Adding 'click' event listener to the container
