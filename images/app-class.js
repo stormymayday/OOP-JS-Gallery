@@ -41,6 +41,9 @@ class Gallery {
         // Binding closeModal method to the Gallery
         this.closeModal = this.closeModal.bind(this);
 
+        // Binding prevImage method to the Gallery
+        this.prevImage = this.prevImage.bind(this);
+
         // Bidnings - end
 
         // Adding 'click' event listener to the container
