@@ -17,6 +17,9 @@ class Gallery {
         // Selecting the Main Image inside the Modal
         this.mainModalImg = getElement('.main-img');
 
+        // Selecting the Image Name
+        this.imageName = getElement('.image-name');
+
     }
     // constructor - end
 
