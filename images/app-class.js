@@ -23,6 +23,9 @@ class Gallery {
         // Selecting the Modal Images
         this.modalImages = getElement('.modal-images');
 
+        // Selecting the Close Modal Button
+        this.closeModalBtn = getElement('.close-btn');
+
     }
     // constructor - end
 
