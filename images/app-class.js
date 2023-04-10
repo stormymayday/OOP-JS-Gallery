@@ -29,6 +29,9 @@ class Gallery {
         // Selecting the Previous Button inside the Modal
         this.prevBtn = getElement('.prev-btn');
 
+        // Selecting the Next Button inside the Modal
+        this.nextBtn = getElement('.next-btn');
+
     }
     // constructor - end
 
