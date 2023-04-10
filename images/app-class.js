@@ -26,6 +26,9 @@ class Gallery {
         // Selecting the Close Modal Button
         this.closeModalBtn = getElement('.close-btn');
 
+        // Selecting the Previous Button inside the Modal
+        this.prevBtn = getElement('.prev-btn');
+
     }
     // constructor - end
 
