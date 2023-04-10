@@ -112,6 +112,28 @@ class Gallery {
         this.modalImages.removeEventListener('click', this.selectModalImage);
     };
     // closeModal - end
+
+    // prevImage - start
+    prevImage() {
+
+        // Getting the selected image
+        const selectedImage = this.modalImages.querySelector('.selected');
+
+        // Getting the previous image
+        // OR the last image (if it is the start of the array and previousElementSibling is undefined)
+        const prevImage = selectedImage.previousElementSibling || this.modalImages.lastElementChild;
+
+        // Removing the class '.selected' from the selected image
+        selectedImage.classList.remove('selected');
+
+        // Adding the class '.selected' to the previous image
+        prevImage.classList.add('selected');
+
+        // Setting the previous image as the main image
+        this.setMainImage(prevImage);
+
+    };
+    // prevImage - end
     // Methods - end
 
 }
