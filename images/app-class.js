@@ -11,6 +11,9 @@ class Gallery {
         // 2. Using Spread Operator to convert NodeList into an Array
         this.list = [...element.querySelectorAll('.img')];
 
+        // Selecting the Modal
+        this.modal = getElement('.modal');
+
     }
     // constructor - end
 
