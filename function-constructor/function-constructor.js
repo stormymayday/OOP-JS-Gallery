@@ -1,4 +1,4 @@
-import getElement from "./utils/getElement.js";
+import getElement from "../utils/getElement.js";
 
 // Constructor function - start
 function Gallery(element) {
