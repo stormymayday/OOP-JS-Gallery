@@ -1,7 +1,7 @@
 import getElement from "../utils/getElement.js";
 
 // Constructor function - start
-function Gallery(element) {
+export function Gallery(element) {
 
     // Selecting the container (section with class '.nature' or '.city')
     this.container = element;
@@ -192,11 +192,3 @@ Gallery.prototype.selectModalImage = function (event) {
 };
 // selectModalImage - end
 // Gallery Methods - end
-
-// Gallery Instances - start
-// Nature Gallery:
-const natureGallery = new Gallery(getElement('.nature'));
-
-// City Gallery:
-const cityGallery = new Gallery(getElement('.city'));
-// Gallery Instances - end
