@@ -1,4 +1,5 @@
 import Gallery from "./class/class.js";
+import getElement from "./utils/getElement.js";
 
 // Gallery Instances - start
 // Nature Gallery:
