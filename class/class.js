@@ -1,4 +1,4 @@
-import getElement from "./utils/getElement.js";
+import getElement from "../utils/getElement.js";
 
 // Gallery class - start
 class Gallery {
