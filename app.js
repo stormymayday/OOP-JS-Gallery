@@ -3,9 +3,9 @@ import { Gallery as GalleryFC } from "./function-constructor/function-constructo
 import getElement from "./utils/getElement.js";
 
 // Gallery Instances - start
-// Nature Gallery:
-const natureGallery = new Gallery(getElement('.nature'));
+// Nature Gallery (using function constructor):
+const natureGallery = new GalleryFC(getElement('.nature'));
 
-// City Gallery:
+// City Gallery (using class):
 const cityGallery = new Gallery(getElement('.city'));
 // Gallery Instances - end
