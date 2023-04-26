@@ -1,3 +1,5 @@
+import getElement from "./utils/getElement.js";
+
 // Gallery class - start
 class Gallery {
 
@@ -205,19 +207,6 @@ class Gallery {
 
 }
 // Gallery class - end
-
-// getElement - start
-function getElement(selection) {
-
-    const element = document.querySelector(selection);
-
-    if (element) {
-        return element;
-    }
-
-    throw new Error(`Please check "${selection}" selector, no such element exists`);
-}
-// getElement - end
 
 // Gallery Instances - start
 // Nature Gallery:
