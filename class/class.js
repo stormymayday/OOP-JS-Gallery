@@ -208,6 +208,8 @@ class Gallery {
 }
 // Gallery class - end
 
+export default Gallery;
+
 // Gallery Instances - start
 // Nature Gallery:
 const natureGallery = new Gallery(getElement('.nature'));
