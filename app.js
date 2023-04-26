@@ -1,4 +1,5 @@
 import Gallery from "./class/class.js";
+import { Gallery as GalleryFC } from "./function-constructor/function-constructor.js";
 import getElement from "./utils/getElement.js";
 
 // Gallery Instances - start
