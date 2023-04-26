@@ -1,3 +1,5 @@
+import getElement from "./utils/getElement.js";
+
 // Constructor function - start
 function Gallery(element) {
 
@@ -198,16 +200,3 @@ const natureGallery = new Gallery(getElement('.nature'));
 // City Gallery:
 const cityGallery = new Gallery(getElement('.city'));
 // Gallery Instances - end
-
-// getElement - start
-function getElement(selection) {
-
-    const element = document.querySelector(selection);
-
-    if (element) {
-        return element;
-    }
-
-    throw new Error(`Please check "${selection}" selector, no such element exists`);
-}
-// getElement - end
